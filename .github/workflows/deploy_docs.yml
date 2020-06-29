@@ -4,10 +4,7 @@ name: docs
 # should be triggered. 
 # If one wants to run this action at very `push` set:
 # `on: [push]`
-on:
-  push:
-    branches:
-      - never
+on: [push]
 
 jobs:
   deploy-ghpages:
@@ -24,11 +21,6 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python-version }}
-    # - name: Set up conda
-    #   uses: goanpeca/setup-miniconda@v1
-    #   with:
-    #     python-version: ${{ matrix.python-version }}
-    #     auto-update-conda: true
     - name: Install package 📦
       run: |
         # conda info
@@ -42,6 +34,6 @@ jobs:
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
-        ACCESS_TOKEN: ${{ secrets.YOUR_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.PWNED_DOCS }}
         BRANCH: gh-pages
         FOLDER: "doc/build/html"
