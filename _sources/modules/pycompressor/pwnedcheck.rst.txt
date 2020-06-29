@@ -1,0 +1,30 @@
+pwnedcheck package
+==================
+
+Submodules
+----------
+
+pwnedcheck.check\_pwd module
+----------------------------
+
+.. automodule:: pwnedcheck.check_pwd
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pwnedcheck.run module
+---------------------
+
+.. automodule:: pwnedcheck.run
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: pwnedcheck
+   :members:
+   :undoc-members:
+   :show-inheritance:

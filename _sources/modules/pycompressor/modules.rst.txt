@@ -1,0 +1,7 @@
+pwnedcheck
+==========
+
+.. toctree::
+   :maxdepth: 4
+
+   pwnedcheck
