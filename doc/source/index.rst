@@ -1,5 +1,5 @@
-<package_name> documentation
-============================
+Pwd-Checl documentation
+=======================
 
 This documentation begins here...
 
@@ -12,7 +12,7 @@ This documentation begins here...
    howto/howto
 
 
-.. automodule:: <package_name>
+.. automodule:: pwnedcheck
     :members:
     :noindex:
 
