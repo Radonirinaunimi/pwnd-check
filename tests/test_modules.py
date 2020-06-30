@@ -10,7 +10,10 @@
 # Documentation:
 # https://docs.pytest.org/en/stable/contents.html
 
-from pwnedcheck.run import check_str
+import pytest
+import getpass
+from unittest.mock import patch
+from pwnedcheck.run import main
 from pwnedcheck.check_pwd import check_pwd
 
 
@@ -26,12 +29,15 @@ def test_check_pwd():
     assert isinstance(pwd_count, int) and isinstance(pwd_hash, str)
 
 
-# -- Test check string -----------------------------------------------
+# -- Test main -------------------------------------------------------
+
+# @patch("getpass.getpass")
+# def test_main():
+#     getpass.return_value = "test"
+#     assert main()
 
 
-def test_check_str():
-    """Test the modules that checks the type of the argument that is
-    parsed from the command line.
-    """
-    string = "This is just a test"
-    assert check_str(string) == string
+@pytest.fixture
+def test_mainx(monkeypatch):
+    monkeypatch.setattr(getpass, "getpass", lambda x: "test")
+    assert main() is None
