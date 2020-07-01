@@ -7,7 +7,7 @@
 import sys
 import logging
 from getpass import getpass
-from pwnedcheck.check_pwd import check_pwd
+from checkpwd.check_pwd import check_pwd
 
 logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
 log = logging.getLogger(__name__)

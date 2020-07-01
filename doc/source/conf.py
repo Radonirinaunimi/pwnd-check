@@ -11,17 +11,17 @@ import sys
 from recommonmark.transform import AutoStructify
 sys.path.insert(0, os.path.abspath('..'))
 # Used to determine the package version
-import pwnedcheck
+import checkpwd
 
 
 # -- Project information -----------------------------------------------------
 
-project = '<package_name>'
-copyright = '<copyrights>'
-author = '<list of authors>'
+project = 'checkpwd'
+copyright = '2020, Tanjona R. Rabemananjara'
+author = 'Tanjona R. Rabemananjara'
 
 # The full version, including alpha/beta/rc tags
-release = pwnedcheck.__version__
+release = checkpwd.__version__
 
 
 # -- General configuration ---------------------------------------------------

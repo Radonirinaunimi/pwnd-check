@@ -13,7 +13,7 @@ import sys
 from setuptools import setup
 from setuptools import find_packages
 
-PACKAGE = "pwnedcheck"
+PACKAGE = "checkpwd"
 
 # Used for pytest and code coverage
 TESTS_REQUIEREMENTS = ["pytest", "pytest-cov"]
@@ -58,7 +58,7 @@ setup(
     url="https://github.com/Radonirinaunimi/pwnd-check/",
     install_requires=PACKAGE_REQUIEREMENTS,
     extras_require={"docs": DOCS_REQUIEREMENTS, "tests": TESTS_REQUIEREMENTS},
-    entry_points={"console_scripts": ["pwnedcheck = pwnedcheck.run:main", ]},
+    entry_points={"console_scripts": ["checkpwd = checkpwd.run:main", ]},
     package_dir={"": "src"},
     packages=find_packages("src"),
     zip_safe=False,

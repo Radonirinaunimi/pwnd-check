@@ -13,8 +13,8 @@
 import pytest
 import getpass
 from unittest.mock import patch
-from pwnedcheck.run import main
-from pwnedcheck.check_pwd import check_pwd
+from checkpwd.run import main
+from checkpwd.check_pwd import check_pwd
 
 
 # -- Test check_pwd --------------------------------------------------

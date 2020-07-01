@@ -1,5 +1,5 @@
-Pwd-Checl documentation
-=======================
+CheckPwd documentation
+======================
 
 This documentation begins here...
 
