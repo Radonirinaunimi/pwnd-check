@@ -9,8 +9,8 @@ BUILDDIR      = build
 
 # Custom directory
 # Replace <package_name> by the name of the package
-PACKAGEDIR = ../src/<package_name>
-PACKAGETESTDIR = ../src/<package_name>/tests
+PACKAGEDIR = ../src/pwnedcheck
+PACKAGETESTDIR = ../src/pwnedcheck/tests
 
 # If there is no argument provided to make, then print out help
 help:

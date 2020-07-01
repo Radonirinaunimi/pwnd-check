@@ -11,7 +11,7 @@ import sys
 from recommonmark.transform import AutoStructify
 sys.path.insert(0, os.path.abspath('..'))
 # Used to determine the package version
-import <package_name>
+import pwnedcheck
 
 
 # -- Project information -----------------------------------------------------
@@ -21,7 +21,7 @@ copyright = '<copyrights>'
 author = '<list of authors>'
 
 # The full version, including alpha/beta/rc tags
-release = <package_name>.__version__
+release = pwnedcheck.__version__
 
 
 # -- General configuration ---------------------------------------------------

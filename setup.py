@@ -13,14 +13,14 @@ import sys
 from setuptools import setup
 from setuptools import find_packages
 
-PACKAGE = "<package_name>"
+PACKAGE = "pwnedcheck"
 
 # Used for pytest and code coverage
 TESTS_REQUIEREMENTS = ["pytest", "pytest-cov"]
 # Depending on the documents more dependencies can be added
 DOCS_REQUIEREMENTS = ["recommonmark", "sphinx_rtd_theme", "sphinxcontrib-bibtex"]
 # Dependencies for the packages
-PACKAGE_REQUIEREMENTS = ["numpy", "numba"]
+PACKAGE_REQUIEREMENTS = ["numpy", "requests"]
 
 # Check python version
 if sys.version_info < (3, 6):
@@ -51,14 +51,14 @@ def get_version():
 setup(
     name=PACKAGE,
     version=get_version(),
-    description="<brief description here>",
+    description="Check data breaches",
     long_description=long_description,
-    author="<lists of authors>",
-    author_email="<correspondence email>",
+    author="Tanjona R. Rabemananjara",
+    author_email="tanjona.rabemananjara@unimi.it",
     url="<project url>",
     install_requires=PACKAGE_REQUIEREMENTS,
     extras_require={"docs": DOCS_REQUIEREMENTS, "tests": TESTS_REQUIEREMENTS},
-    entry_points={"console_scripts": ["<package_name> = <package_name>.run:main", ]},
+    entry_points={"console_scripts": ["pwnedcheck = pwnedcheck.run:main", ]},
     package_dir={"": "src"},
     packages=find_packages("src"),
     zip_safe=False,
