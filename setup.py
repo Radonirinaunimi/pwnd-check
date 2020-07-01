@@ -55,7 +55,7 @@ setup(
     long_description=long_description,
     author="Tanjona R. Rabemananjara",
     author_email="tanjona.rabemananjara@unimi.it",
-    url="<project url>",
+    url="https://github.com/Radonirinaunimi/pwnd-check/",
     install_requires=PACKAGE_REQUIEREMENTS,
     extras_require={"docs": DOCS_REQUIEREMENTS, "tests": TESTS_REQUIEREMENTS},
     entry_points={"console_scripts": ["pwnedcheck = pwnedcheck.run:main", ]},
