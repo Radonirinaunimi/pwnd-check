@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>checkpwd &mdash; checkpwd 0.1.0 documentation</title>
+  <title>checkpwd package &mdash; checkpwd 0.1.0 documentation</title>
   
 
   
@@ -129,13 +129,13 @@
     
       <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>checkpwd</li>
+      <li>checkpwd package</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/modules/pycompressor/modules.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/modules/pycompressor/checkpwd.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -148,18 +148,52 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="checkpwd">
-<h1>checkpwd<a class="headerlink" href="#checkpwd" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="checkpwd.html">checkpwd package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="checkpwd.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="checkpwd.html#module-checkpwd.check_pwd">checkpwd.check_pwd module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="checkpwd.html#module-checkpwd.run">checkpwd.run module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="checkpwd.html#module-checkpwd">Module contents</a></li>
-</ul>
-</li>
-</ul>
+  <div class="section" id="checkpwd-package">
+<h1>checkpwd package<a class="headerlink" href="#checkpwd-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-checkpwd.check_pwd">
+<span id="checkpwd-check-pwd-module"></span><h2>checkpwd.check_pwd module<a class="headerlink" href="#module-checkpwd.check_pwd" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="checkpwd.check_pwd.check_pwd">
+<code class="sig-prename descclassname">checkpwd.check_pwd.</code><code class="sig-name descname">check_pwd</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pwd</span></em><span class="sig-paren">)</span><a class="headerlink" href="#checkpwd.check_pwd.check_pwd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the given passwpord has been breached online.
+The password is basically checked in the pwnedpasswords
+website.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pwd</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Password</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>hashpwd password in has
+count the number of appearance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.8)">tuple</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-checkpwd.run">
+<span id="checkpwd-run-module"></span><h2>checkpwd.run module<a class="headerlink" href="#module-checkpwd.run" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="checkpwd.run.splash">
+<code class="sig-prename descclassname">checkpwd.run.</code><code class="sig-name descname">splash</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#checkpwd.run.splash" title="Permalink to this definition">¶</a></dt>
+<dd><p>Splash <cite>pwnedcheck</cite> logo and information.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="checkpwd.run.main">
+<code class="sig-prename descclassname">checkpwd.run.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#checkpwd.run.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that fetchs the password given by the user from the command
+line using <cite>getpass</cite>. The password is then checked.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-checkpwd">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-checkpwd" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 

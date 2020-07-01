@@ -1,7 +1,7 @@
-pwnedcheck
-==========
+checkpwd
+========
 
 .. toctree::
    :maxdepth: 4
 
-   pwnedcheck
+   checkpwd

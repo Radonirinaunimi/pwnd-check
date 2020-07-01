@@ -1,0 +1,30 @@
+checkpwd package
+================
+
+Submodules
+----------
+
+checkpwd.check\_pwd module
+--------------------------
+
+.. automodule:: checkpwd.check_pwd
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+checkpwd.run module
+-------------------
+
+.. automodule:: checkpwd.run
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: checkpwd
+   :members:
+   :undoc-members:
+   :show-inheritance:
