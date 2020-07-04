@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CheckPwd documentation &mdash; checkpwd 0.1.0 documentation</title>
+  <title>CheckPwd documentation &mdash; checkpwd 0.2.0 documentation</title>
   
 
   
@@ -85,6 +85,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="howto/howto.html">How to run the code</a></li>
 </ul>
+<p class="caption"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/checkpwd/modules.html">checkpwd</a></li>
+</ul>
 
             
           
@@ -151,12 +155,40 @@
             
   <div class="section" id="checkpwd-documentation">
 <h1>CheckPwd documentation<a class="headerlink" href="#checkpwd-documentation" title="Permalink to this headline">¶</a></h1>
-<p>This documentation begins here…</p>
+<p><strong>CheckPwd</strong> is a package that allows you to (1) check wether your passwords (already attached to some accounts)
+have been leaked, or (2) give you an idea on which password you should not adopt for your next accounts. There
+are real dangers in using passwords that have already been breached. The password might have been added to a
+dictionary that is used for hacking and therefore makes all the accounts attached to it extremely vulnerable.</p>
+<p><a class="reference external" href="https://haveibeenpwned.com/">Have I Benn Pwned</a> is a website that stores all of the credentials (email
+adrreses, passwords) that have been breached online. It also provides APIs that allows users to make specific
+requests. <strong>CheckPwd</strong> uses the <a class="reference external" href="https://haveibeenpwned.com/API/v3">pwnedpasswords</a> API to request the
+list of leaked password in a hashed format.</p>
+<div class="section" id="is-this-secure">
+<h2>Is this secure?<a class="headerlink" href="#is-this-secure" title="Permalink to this headline">¶</a></h2>
+<p>Obviously, it is not ideal to send the entirety of your password to any website. What <strong>CheckPwd</strong> does is the
+following:</p>
+<ul class="simple">
+<li><p>splits the password into two parts and encrypts both using a SHA-1 hash format</p></li>
+<li><p>sends the first half to the website which then sends back a list of hashed passwords that contains the first
+half of the password</p></li>
+<li><p>finalizes the checks locally by comparing the list of hashed passwords to the second half of the password</p></li>
+</ul>
+<p>This process makes sure that your password is not uploaded anywhere.</p>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">HowTo</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="howto/howto.html">How to run the code</a></li>
 </ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/checkpwd/modules.html">checkpwd</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modules/checkpwd/checkpwd.html">checkpwd package</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
