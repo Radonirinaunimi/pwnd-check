@@ -1,6 +1,7 @@
 ![license](https://img.shields.io/github/license/Radonirinaunimi/python-template?style=flat-square)
 ![repo size](https://img.shields.io/github/repo-size/Radonirinaunimi/python-template?style=flat-square)
-![coverage](https://img.shields.io/codecov/c/github/Radonirinaunimi/pwnd-check/backbone?style=flat-square)
+![release](https://img.shields.io/github/v/release/Radonirinaunimi/pwnd-check?label=release&logo=Github&style=flat-square)
+[![coverage](https://img.shields.io/codecov/c/github/Radonirinaunimi/pwnd-check/backbone?style=flat-square)](https://codecov.io/gh/Radonirinaunimi/pwn-check)
 
 ### CheckPwd
 
