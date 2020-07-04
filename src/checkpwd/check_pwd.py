@@ -38,7 +38,7 @@ def check_pwd(pwd):
     url = "https://api.pwnedpasswords.com/range/" + head
     # Check the url status
     try:
-        log.info("Accessing https://api.pwnedpasswords.com/range/ ...")
+        log.info("Accessing https://api.pwnedpasswords.com/range/")
         response = requests.get(url)
         response.raise_for_status()
     except HTTPError as http_error:

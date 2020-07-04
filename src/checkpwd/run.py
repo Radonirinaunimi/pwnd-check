@@ -15,24 +15,24 @@ log = logging.getLogger(__name__)
 
 def splash():
     """Splash `pwnedcheck` logo and information."""
-    print(" ____________________________________________________________ ")
-    print("|                               _      _               _     |")
-    print("|  _ ____      ___ __   ___  __| | ___| |__   ___  ___| | __ |")
-    print("| | '_ \ \ /\ / / '_ \ / _ \/ _` |/ __| '_ \ / _ \/ __| |/ / |")
-    print("| | |_) \ V  V /| | | |  __/ (_| | (__| | | |  __/ (__|   <  |")
-    print("| | .__/ \_/\_/ |_| |_|\___|\__,_|\___|_| |_|\___|\___|_|\_\ |")
-    print("| |_|                                                        |")
-    print("| Author: Tanjona R. Rabemananjara                           |")
-    print("| URL: https://radonirinaunimi.github.io/pwnd-check/         |")
-    print("|____________________________________________________________|")
+    print(" _____________________________________________________ ")
+    print("|   ____ _               _    ____              _     |")
+    print("|  / ___| |__   ___  ___| | _|  _ \__      ____| |    |")  
+    print("| | |   | '_ \ / _ \/ __| |/ / |_) \ \ /\ / / _` |    |")
+    print("| | |___| | | |  __/ (__|   <|  __/ \ V  V / (_| |    |")
+    print("|  \____|_| |_|\___|\___|_|\_\_|     \_/\_/ \__,_|    |")
+    print("|                                                     |")
+    print("| Author: Tanjona R. Rabemananjara                    |")
+    print("| URL: https://radonirinaunimi.github.io/pwnd-check/  |")
+    print("|_____________________________________________________|")
 
 
 def main():
     """Function that fetchs the password given by the user from the command
-    line using `getpass`. The password is then checked.
+    line using `getpass`. The password is then checked on `HaveIBeenPwned`.
     """
     splash()
-    print("Enter your password:")
+    print("\nEnter your password below.")
     pwd = getpass()
     try:
         # Check the pwd and add the values to some variables

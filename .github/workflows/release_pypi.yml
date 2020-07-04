@@ -9,7 +9,7 @@ name: release
 on:
   push:
     branches:
-      - master
+      - never
 
 jobs:
   release:
