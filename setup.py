@@ -23,9 +23,10 @@ DOCS_REQUIEREMENTS = ["recommonmark", "sphinx_rtd_theme", "sphinxcontrib-bibtex"
 PACKAGE_REQUIEREMENTS = ["requests"]
 
 # Check python version
-if sys.version_info < (3, 6):
-    print(f"{PACKAGE} requires Python 3.6 or later", file=sys.stderr)
-    sys.exit(1)
+this_directory = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
+    long_description = f.read()
+
 
 # Read through Readme
 try:
