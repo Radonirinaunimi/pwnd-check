@@ -22,15 +22,11 @@ DOCS_REQUIEREMENTS = ["recommonmark", "sphinx_rtd_theme", "sphinxcontrib-bibtex"
 # Dependencies for the packages
 PACKAGE_REQUIEREMENTS = ["requests"]
 
-# Check python version
-this_directory = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
-    long_description = f.read()
-
 
 # Read through Readme
 try:
-    with open("README.md") as f:
+    this_directory = os.path.abspath(os.path.dirname(__file__))
+    with open(os.path.join(this_directory, "README.md"), encoding="utf-8") as f:
         long_description = f.read()
 except IOError:
     print("Read me file not found.")
