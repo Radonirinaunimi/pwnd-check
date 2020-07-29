@@ -50,6 +50,7 @@ setup(
     version=get_version(),
     description="Check data breaches",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     author="Tanjona R. Rabemananjara",
     author_email="tanjona.rabemananjara@unimi.it",
     url="https://github.com/Radonirinaunimi/pwnd-check/",
@@ -58,6 +59,7 @@ setup(
     entry_points={"console_scripts": ["checkpwd = checkpwd.run:main", ]},
     package_dir={"": "src"},
     packages=find_packages("src"),
+    package_data = {'' : ['logo/logo.png'], },
     zip_safe=False,
     classifiers=[
         "Operating System :: Unix",
@@ -66,4 +68,6 @@ setup(
         "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Physics",
     ],
+    setup_requires=['wheel'],
+    python_requires='>=3.7'
 )
